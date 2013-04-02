@@ -3,7 +3,7 @@ Contributors: Up2
 Author URI: http://www.up2technology.com/
 Requires at Least: 3.5
 Tested Up To: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.1
 Tags: gmap3, maps, google, Up2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -14,12 +14,12 @@ Up2 Map Places allows you to display Google Maps in your content easily.
 
 Up2 Google Map Places comes with the following features:
 
-* Map Place custom post type for working with places in a way similar to standard posts.
+* Map Place custom post type for working with places in a way similar to standars posts.
 * Map Place categories.
 * Custom maps pin style.
 * Map Place shortcode generator.
 * Map Direction shortcode generator.
-* Form for creating map places via front-end with possibility to add CAPTCHA and user restrictions. 
+* Form for creating map places via front-end with posibility to add captcha and user restrictions. 
 * CSV Upload of map places.
 * Map Places and Map Direction custom widgets with many options.
 
@@ -45,6 +45,10 @@ To install Up2 Map Places follow these simple steps:
 5. Map Places CSV Import
 
 == Changelog ==
+
+= 1.1 =
+
+* Fixed: Plugin URL constant
 
 = 1.0 =
 

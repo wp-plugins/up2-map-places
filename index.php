@@ -2,7 +2,7 @@
 /*
 Plugin Name: Up2 Map Places
 Description: Up2 Map Places allows you to display Google Maps in your content easily.
-Version: 1.0
+Version: 1.1
 Author: Up2Technology
 Author URI: http://www.up2technology.com/
 License: GPLv3
@@ -12,7 +12,7 @@ if ( ! defined('UP2_PLUGIN_DIR') )
 	define('UP2_PLUGIN_DIR', dirname( __FILE__ ));
 
 if ( ! defined('UP2_PLUGIN_URL') )
-	define('UP2_PLUGIN_URL', WP_PLUGIN_URL . '/up2_map_places/');
+	define('UP2_PLUGIN_URL', trailingslashit( plugins_url( '', __FILE__ ) ) );
 
 add_action('admin_menu', 'up2_portal_settings');
 
