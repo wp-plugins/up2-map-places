@@ -138,15 +138,15 @@ var up2CreatePlace = {
 		
 		});
 		
-		//center new marker ponint
+		// center new marker point
 		setTimeout(function(){
 			var marker = jQuery("#up2_map_demo").gmap3({get:"marker"});
 			var map = jQuery("#up2_map_demo").gmap3("get");
 			
-			if( map != undefined && marker != undefined )
+			if( map != undefined && marker != undefined ) {
 				map.panTo(marker.getPosition());
-			
-		}, 300);
+			}
+		}, 100);
 		
 	}
 		

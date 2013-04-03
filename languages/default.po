@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Up2 Map Places\n"
-"POT-Creation-Date: 2013-03-27 16:29+0200\n"
-"PO-Revision-Date: 2013-03-27 16:29+0200\n"
+"POT-Creation-Date: 2013-04-03 18:49+0200\n"
+"PO-Revision-Date: 2013-04-03 18:49+0200\n"
 "Last-Translator: Up2 <test@up2test.com>\n"
 "Language-Team: Up2 <test@up2test.com>\n"
 "Language: English\n"
@@ -14,403 +14,520 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../index.php:49
+#: ../index.php:35
+msgid "Map Places Settings"
+msgstr ""
+
+#: ../index.php:37
+msgid "Map Places Form"
+msgstr ""
+
+#: ../index.php:38
+msgid "Map Direction"
+msgstr ""
+
+#: ../index.php:39
+msgid "CSV Upload"
+msgstr ""
+
+#: ../index.php:68
 msgid "Map Places Shortcode Generator"
 msgstr ""
 
-#: ../index.php:54 ../widget.php:108
+#: ../index.php:73 ../include/widget.php:104
 msgid "Map Type Control"
 msgstr ""
 
-#: ../index.php:56 ../index.php:62 ../index.php:68 ../index.php:74
-#: ../index.php:80 ../index.php:188 ../index.php:194
+#: ../index.php:75 ../index.php:81 ../index.php:87 ../index.php:93
+#: ../index.php:99 ../index.php:208 ../index.php:214
 msgid "Yes"
 msgstr ""
 
-#: ../index.php:60 ../widget.php:112
+#: ../index.php:79 ../include/widget.php:108
 msgid "Navigation Control"
 msgstr ""
 
-#: ../index.php:66 ../widget.php:116
+#: ../index.php:85 ../include/widget.php:112
 msgid "Scrollwheel"
 msgstr ""
 
-#: ../index.php:72 ../widget.php:120
+#: ../index.php:91 ../include/widget.php:116
 msgid "StreetView Control"
 msgstr ""
 
-#: ../index.php:78 ../widget.php:124
+#: ../index.php:97 ../include/widget.php:120
 msgid "Clustering"
 msgstr ""
 
-#: ../index.php:84 ../widget.php:127
+#: ../index.php:103 ../include/widget.php:133
 msgid "Map Type"
 msgstr ""
 
-#: ../index.php:87 ../widget.php:129
+#: ../index.php:106 ../include/widget.php:135
 msgid "Terrain"
 msgstr ""
 
-#: ../index.php:88 ../widget.php:130
+#: ../index.php:107 ../include/widget.php:136
 msgid "Satellite"
 msgstr ""
 
-#: ../index.php:89 ../widget.php:131
+#: ../index.php:108 ../include/widget.php:137
 msgid "Roadmap"
 msgstr ""
 
-#: ../index.php:90 ../widget.php:132
+#: ../index.php:109 ../include/widget.php:138
 msgid "Hybrid"
 msgstr ""
 
-#: ../index.php:95 ../widget.php:136
+#: ../index.php:114 ../include/widget.php:142
 msgid "Map Type Control Options"
 msgstr ""
 
-#: ../index.php:98 ../widget.php:138
+#: ../index.php:117 ../include/widget.php:144
 msgid "Default"
 msgstr ""
 
-#: ../index.php:99 ../widget.php:139
-msgid "Dropdown menu"
+#: ../index.php:118
+msgid "Dropdown Menu"
 msgstr ""
 
-#: ../index.php:104 ../widget.php:143
+#: ../index.php:123 ../include/widget.php:149
 msgid "Map Type Control Position"
 msgstr ""
 
-#: ../index.php:107
+#: ../index.php:126
 msgid "Positioned in the center of the bottom row"
 msgstr ""
 
-#: ../index.php:108
+#: ../index.php:127
 msgid "Positioned in the bottom left and flow towards the middle"
 msgstr ""
 
-#: ../index.php:109
+#: ../index.php:128
 msgid "Positioned in the bottom right and flow towards the middle"
 msgstr ""
 
-#: ../index.php:110
+#: ../index.php:129
 msgid "Positioned on the left, above bottom-left elements, and flow upwards"
 msgstr ""
 
-#: ../index.php:111
+#: ../index.php:130
 msgid "Positioned in the center of the left side"
 msgstr ""
 
-#: ../index.php:112
+#: ../index.php:131
 msgid "Positioned on the left, below top-left elements, and flow downwards"
 msgstr ""
 
-#: ../index.php:113
+#: ../index.php:132
 msgid "Positioned on the right, above bottom-right elements, and flow upwards"
 msgstr ""
 
-#: ../index.php:114
+#: ../index.php:133
 msgid "Positioned in the center of the right side"
 msgstr ""
 
-#: ../index.php:115
+#: ../index.php:134
 msgid "Positioned on the right, below top-right elements, and flow downwards"
 msgstr ""
 
-#: ../index.php:116
+#: ../index.php:135
 msgid "Positioned in the center of the top row"
 msgstr ""
 
-#: ../index.php:117
+#: ../index.php:136
 msgid "Positioned in the top left and flow towards the middle"
 msgstr ""
 
-#: ../index.php:118
+#: ../index.php:137
 msgid "Positioned in the top right and flow towards the middle"
 msgstr ""
 
-#: ../index.php:123 ../index.php:227
-msgid "Width (px) / Height (px)"
+#: ../index.php:142 ../index.php:246
+msgid "Width/Height (in pixels)"
 msgstr ""
 
-#: ../index.php:130 ../widget.php:168
-msgid "Categories"
+#: ../index.php:149 ../include/posttype.php:40 ../include/posttype.php:51
+msgid "Map Categories"
 msgstr ""
 
-#: ../index.php:134 ../shortcode.php:239 ../widget.php:170
-msgid "Select category"
+#: ../index.php:153 ../include/widget.php:168
+msgid "Select Map Category..."
 msgstr ""
 
-#: ../index.php:142
-msgid "Places"
+#: ../index.php:161 ../include/posttype.php:7 ../include/posttype.php:18
+msgid "Map Places"
 msgstr ""
 
-#: ../index.php:146
-msgid "Select place"
+#: ../index.php:165
+msgid "Select Place..."
 msgstr ""
 
-#: ../index.php:154 ../index.php:198 ../index.php:245
+#: ../index.php:173 ../index.php:218 ../index.php:264
 msgid "Shortcode"
 msgstr ""
 
-#: ../index.php:155 ../index.php:199 ../index.php:246
-msgid ""
-"Copy this code and paste it into your post, page or text widget content."
+#: ../index.php:174 ../index.php:219 ../index.php:265
+msgid "Copy this code and paste it into your post or page content."
 msgstr ""
 
-#: ../index.php:160
+#: ../index.php:179
 msgid "Map Places View"
 msgstr ""
 
-#: ../index.php:177
+#: ../index.php:197
 msgid "Map Place Form Shortcode Generator"
 msgstr ""
 
-#: ../index.php:182
-msgid "Note: To use CAPTCHA, you need Really Simple CAPTCHA plugin installed."
-msgstr ""
-
-#: ../index.php:186
-msgid "Use captcha"
-msgstr ""
-
-#: ../index.php:192
-msgid "For register users"
-msgstr ""
-
-#: ../index.php:205
-msgid "Screenshot"
+#: ../index.php:202
+msgid "To use CAPTCHA, you have to install additional plugin."
 msgstr ""
 
 #: ../index.php:206
+msgid "CAPTCHA"
+msgstr ""
+
+#: ../index.php:212
+msgid "Registered users only"
+msgstr ""
+
+#: ../index.php:224
+msgid "Screenshot"
+msgstr ""
+
+#: ../index.php:225
 msgid "new place form"
 msgstr ""
 
-#: ../index.php:215
+#: ../index.php:234
 msgid "Map Direction Shortcode Generator"
 msgstr ""
 
-#: ../index.php:218 ../widget.php:256
+#: ../index.php:237 ../include/widget.php:259
 msgid "Travel Mode"
 msgstr ""
 
-#: ../index.php:221 ../widget.php:258
+#: ../index.php:240 ../include/widget.php:261
 msgid "Driving"
 msgstr ""
 
-#: ../index.php:222 ../widget.php:259
+#: ../index.php:241 ../include/widget.php:262
 msgid "Walking"
 msgstr ""
 
-#: ../index.php:234
-msgid "Place"
+#: ../index.php:253 ../include/posttype.php:8 ../include/widget.php:175
+#: ../include/widget.php:266
+msgid "Map Place"
 msgstr ""
 
-#: ../index.php:251
+#: ../index.php:270
 msgid "Map Direction View"
 msgstr ""
 
-#: ../index.php:271
-msgid "Places - CSV Import"
+#: ../index.php:287
+msgid "Map Places - CSV Import"
 msgstr ""
 
-#: ../index.php:275
-msgid "CSV Headers:"
+#: ../index.php:292
+msgid "Basic CSV Headers"
 msgstr ""
 
-#: ../index.php:277
-msgid "Basic columns:"
-msgstr ""
-
-#: ../index.php:279
-msgid "For find location and put on map the plugin use Geocoding"
-msgstr ""
-
-#: ../index.php:280
+#: ../index.php:294
 msgid "Usage Limits"
 msgstr ""
 
-#: ../index.php:281
+#: ../index.php:295
+msgid "Finding location on the map uses Google Geocoding API."
+msgstr ""
+
+#: ../index.php:296
 msgid ""
-"Use of the Google Geocoding API is subject to a query limit of 2,500 "
-"geolocation requests per day"
+"Usage of the Google Geocoding API is limited to 2,500 geolocation requests "
+"per day."
 msgstr ""
 
-#: ../index.php:286
-msgid "Recomended to use advance columns options."
+#: ../index.php:299
+msgid "Advanced CSV Headers"
 msgstr ""
 
-#: ../index.php:287
-msgid "Advance columns:"
+#: ../index.php:301
+msgid "(recommended)"
 msgstr ""
 
-#: ../index.php:289
-msgid "<strong>category</strong> field is nummeric"
+#: ../index.php:303
+msgid "<strong>category</strong> - numeric field - use map category ID."
 msgstr ""
 
-#: ../index.php:289
-msgid "View Map categories"
+#: ../index.php:303
+msgid "View Map Categories"
 msgstr ""
 
-#: ../index.php:290
+#: ../index.php:307
 msgid "Latitude - example:"
 msgstr ""
 
-#: ../index.php:291
+#: ../index.php:308
 msgid "Longitude - example:"
 msgstr ""
 
-#: ../index.php:295
-msgid "CSV File:"
+#: ../index.php:312
+msgid "Import CSV File"
 msgstr ""
 
-#: ../index.php:295
-msgid "Upload and Save"
+#: ../index.php:312
+msgid "Import"
 msgstr ""
 
-#: ../index.php:327
+#: ../index.php:344
 msgid "New data imported."
 msgstr ""
 
-#: ../index.php:329
+#: ../index.php:346
 msgid "Invalid CSV file."
 msgstr ""
 
-#: ../places_posttype.php:88 ../shortcode.php:247
-msgid "Find"
+#: ../include/posttype.php:9
+msgid "Add New"
 msgstr ""
 
-#: ../places_posttype.php:90
-msgid "Icon style"
+#: ../include/posttype.php:10
+msgid "Add New Map Place"
 msgstr ""
 
-#: ../places_posttype.php:103
-msgid "Save marker"
+#: ../include/posttype.php:11
+msgid "Edit Map Place"
 msgstr ""
 
-#: ../shortcode.php:201
-msgid "You don`t have places to show in the map"
+#: ../include/posttype.php:12
+msgid "New Map Place"
 msgstr ""
 
-#: ../shortcode.php:233
-msgid "Name"
+#: ../include/posttype.php:13
+msgid "View Map Place"
 msgstr ""
 
-#: ../shortcode.php:237
-msgid "Category"
+#: ../include/posttype.php:14
+msgid "Search Map Places"
 msgstr ""
 
-#: ../shortcode.php:246
+#: ../include/posttype.php:15
+msgid "No Map Places found"
+msgstr ""
+
+#: ../include/posttype.php:16
+msgid "No Map Places found in Trash"
+msgstr ""
+
+#: ../include/posttype.php:17
+msgid "Parent Map Place:"
+msgstr ""
+
+#: ../include/posttype.php:41 ../include/widget.php:166
+msgid "Map Category"
+msgstr ""
+
+#: ../include/posttype.php:42
+msgid "Search Map Categories"
+msgstr ""
+
+#: ../include/posttype.php:43
+msgid "Popular Map Categories"
+msgstr ""
+
+#: ../include/posttype.php:44
+msgid "All Map Categories"
+msgstr ""
+
+#: ../include/posttype.php:45
+msgid "Parent Map Category"
+msgstr ""
+
+#: ../include/posttype.php:46
+msgid "Parent Map Category:"
+msgstr ""
+
+#: ../include/posttype.php:47
+msgid "Edit Map Category"
+msgstr ""
+
+#: ../include/posttype.php:48
+msgid "Update Map Category"
+msgstr ""
+
+#: ../include/posttype.php:49
+msgid "Add New Map Category"
+msgstr ""
+
+#: ../include/posttype.php:50
+msgid "New MAp Category Name"
+msgstr ""
+
+#: ../include/posttype.php:69
+msgid "Map Place Settings"
+msgstr ""
+
+#: ../include/posttype.php:88 ../include/shortcode.php:235
 msgid "Address"
 msgstr ""
 
-#: ../shortcode.php:249
+#: ../include/posttype.php:92 ../include/shortcode.php:236
+msgid "Find Address"
+msgstr ""
+
+#: ../include/posttype.php:95
+msgid "Default Marker Styles"
+msgstr ""
+
+#: ../include/posttype.php:103
+msgid "Custom Marker Style"
+msgstr ""
+
+#: ../include/posttype.php:110
+msgid "Select Custom Marker"
+msgstr ""
+
+#: ../include/posttype.php:118
+msgid "Save Marker"
+msgstr ""
+
+#: ../include/posttype.php:119
+msgid "Settings has been changed. Use \"Save\" button to update."
+msgstr ""
+
+#: ../include/shortcode.php:188
+msgid "There are no places to show on the map"
+msgstr ""
+
+#: ../include/shortcode.php:222
+msgid "Name"
+msgstr ""
+
+#: ../include/shortcode.php:226
+msgid "Category"
+msgstr ""
+
+#: ../include/shortcode.php:228
+msgid "Select Category..."
+msgstr ""
+
+#: ../include/shortcode.php:238
 msgid "Content"
 msgstr ""
 
-#: ../shortcode.php:261
-msgid "Security code"
+#: ../include/shortcode.php:249
+msgid "Security Code"
 msgstr ""
 
-#: ../shortcode.php:267
-msgid "Send"
+#: ../include/shortcode.php:255
+msgid "Submit"
 msgstr ""
 
-#: ../shortcode.php:369
+#: ../include/shortcode.php:352
 msgid ""
-"Validation errors occurred. Please confirm the fields and submit it again."
+"Validation errors occurred. Please, verify the fields and submit the form "
+"again."
 msgstr ""
 
-#: ../shortcode.php:387
+#: ../include/shortcode.php:368
 msgid "You can not add a new place"
 msgstr ""
 
-#: ../shortcode.php:407
-msgid "If you want to create a new place"
+#: ../include/shortcode.php:386
+msgid "was submitted successfully."
 msgstr ""
 
-#: ../shortcode.php:408
-msgid "click here"
+#: ../include/shortcode.php:387
+msgid "Submit New Place?"
 msgstr ""
 
-#: ../shortcode.php:581
+#: ../include/shortcode.php:388
+msgid "Click Here"
+msgstr ""
+
+#: ../include/shortcode.php:558
 msgid "You didn`t select a point for map direction"
 msgstr ""
 
-#: ../widget.php:32
+#: ../include/widget.php:30
 msgid "Display Up2 Map Places"
 msgstr ""
 
-#: ../widget.php:33
+#: ../include/widget.php:31
 msgid "Up2 Map Places"
 msgstr ""
 
-#: ../widget.php:103 ../widget.php:252
-msgid "Title:"
+#: ../include/widget.php:99 ../include/widget.php:247
+msgid "Title"
 msgstr ""
 
-#: ../widget.php:145
+#: ../include/widget.php:124 ../include/widget.php:251
+msgid "Width"
+msgstr ""
+
+#: ../include/widget.php:128 ../include/widget.php:255
+msgid "Height"
+msgstr ""
+
+#: ../include/widget.php:145
+msgid "Dropdown menu"
+msgstr ""
+
+#: ../include/widget.php:151
 msgid "Center of the bottom row"
 msgstr ""
 
-#: ../widget.php:146
+#: ../include/widget.php:152
 msgid "Bottom left and flow towards the middle"
 msgstr ""
 
-#: ../widget.php:147
+#: ../include/widget.php:153
 msgid "Bottom right and flow towards the middle"
 msgstr ""
 
-#: ../widget.php:148
+#: ../include/widget.php:154
 msgid "Left, above bottom-left elements, and flow upwards"
 msgstr ""
 
-#: ../widget.php:149
+#: ../include/widget.php:155
 msgid "Center of the left side"
 msgstr ""
 
-#: ../widget.php:150
+#: ../include/widget.php:156
 msgid "Left, below top-left elements, and flow downwards"
 msgstr ""
 
-#: ../widget.php:151
+#: ../include/widget.php:157
 msgid "Right, above bottom-right elements, and flow upwards"
 msgstr ""
 
-#: ../widget.php:152
+#: ../include/widget.php:158
 msgid "Center of the right side"
 msgstr ""
 
-#: ../widget.php:153
+#: ../include/widget.php:159
 msgid "Right, below top-right elements, and flow downwards"
 msgstr ""
 
-#: ../widget.php:154
+#: ../include/widget.php:160
 msgid "Center of the top row"
 msgstr ""
 
-#: ../widget.php:155
+#: ../include/widget.php:161
 msgid "Top left and flow towards the middle"
 msgstr ""
 
-#: ../widget.php:156
+#: ../include/widget.php:162
 msgid "Top right and flow towards the middle"
 msgstr ""
 
-#: ../widget.php:160 ../widget.php:164 ../widget.php:263 ../widget.php:267
-msgid "Height (px)"
+#: ../include/widget.php:177 ../include/widget.php:268
+msgid "Select Map Place..."
 msgstr ""
 
-#: ../widget.php:177 ../widget.php:271
-msgid "Map Places:"
-msgstr ""
-
-#: ../widget.php:179 ../widget.php:273
-msgid "Select map place..."
-msgstr ""
-
-#: ../widget.php:202
+#: ../include/widget.php:197
 msgid "Display Up2 Map Direction"
 msgstr ""
 
-#: ../widget.php:203
+#: ../include/widget.php:198
 msgid "Up2 Map Direction"
 msgstr ""

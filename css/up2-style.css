@@ -1,0 +1,164 @@
+@CHARSET "UTF-8";
+.up2-map-places img {
+	max-width: none;
+	box-shadow: none !important;
+} 
+.cluster {
+    color: #fff;
+    font: bold 11px/16px 'Arial,Helvetica';
+    text-align: center;
+}
+.cluster-1 {
+    background-image: url(images/m1.png);
+    height: 52px;
+    line-height: 53px;
+    width: 53px;
+}
+.cluster-2 {
+    background-image: url(images/m2.png);
+    height: 55px;
+    line-height: 53px;
+    width: 56px;
+}
+.cluster-3 {
+    background-image: url(images/m3.png);
+    height: 65px;
+    line-height: 66px;
+    width: 66px;
+}
+.cluster-4 {
+    background-image: url(images/m4.png);
+    height: 65px;
+    line-height: 66px;
+    width: 66px;
+}
+.cluster-5 {
+    background-image: url(images/m5.png);
+    height: 65px;
+    line-height: 66px;
+    width: 66px;
+}
+#up2_create_map_notify {
+	display: none;
+	border: 1px solid #ccc;
+	padding: 6px;
+	border-radius: 3px;
+	background-color: #efefef;
+}
+#up2_map_demo {
+	width: 380px;
+	height: 400px;
+	display: none;
+}
+#up2_map_demo img {
+	border-radius: 0;
+	box-shadow: none;
+	max-width: none;
+}
+#map_create_place label {
+	display: block;
+}
+#map_create_place select {
+	width: 383px;
+}
+#map_create_place input[type=text] {
+	width: 370px;
+}
+#map_create_place .up2-find-address {
+	background-color: #e6e6e6;
+    background-image: -moz-linear-gradient(center top , #f4f4f4, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    color: #7c7c7c;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 13px;
+    outline: none;
+}
+#map_create_place a:focus.up2-find-address {
+	outline: none;
+}
+#map_create_place input.up2-address-field {
+	width: 320px;
+}
+#map_create_place input.up2-captcha {
+	width: 100px;
+}
+#map_create_place .up2-captcha-image {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#up2_directions {
+	overflow: auto;
+	height: 100%;
+	border: 1px solid #ededed;
+	margin-top: 10px;
+}
+.up2map-direction-widget-area {
+	overflow: hidden;
+	clear: both;
+}
+#gmap3-menu {
+  background-color: #fff;
+  width: 170px;
+  padding: 0;
+  cursor: pointer;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #676767;
+  border-bottom: 1px solid #676767;
+}
+#gmap3-menu .item {
+	font: 12px/30px arial,helvetica,sans-serif;
+	text-align: left;
+	border-left: 0;
+	border-top: 0;
+	border-right:0;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 4px center;
+}
+#gmap3-menu .item.itemA {
+	background-image: url(images/icon_greenA.png);
+}
+#gmap3-menu .item.itemB {
+	background-image: url(images/icon_greenB.png);
+}
+#gmap3-menu .item.zoomIn {
+	background-image: url(images/zoomin.png);
+}
+#gmap3-menu .item.zoomOut {
+	background-image: url(images/zoomout.png);
+}
+#gmap3-menu .item.centerHere {
+	background-image: url(images/here.png);
+}
+#gmap3-menu .item.hover {
+	background-color: #d6e9f8;
+}
+#gmap3-menu .item.separator {
+	border-bottom: 1px solid #ccc;
+}
+.marker-icons {
+	cursor: pointer;
+	padding: 3px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+.isDefaultMarker {
+	display: none;
+}
+.marker-icon-active {
+	border: 1px solid #2789b6;
+	background-color: #fff;
+}
+#up2-map {
+	border: 1px solid #aaa;
+}
+span.place-modified {
+	color: #f00;
+	font-style: italic;
+	font-size: 13px;
+}

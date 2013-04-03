@@ -42,7 +42,7 @@
 				// console.log(field);
 				// Do something with attachment.id and/or attachment.url here
 				$('#'+field).val(attachment.url);
-				$('#map-icon-view').attr('src', attachment.url);
+				$('#map-icon-view').removeClass('isDefaultMarker').attr('src', attachment.url);
 			});
 
 			frame.open();

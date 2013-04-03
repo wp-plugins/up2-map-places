@@ -1,34 +1,55 @@
 jQuery(function($){
-
-	var address = jQuery('#address').val();
-	if( address != "" ) {
+	$('.place-modified').hide();
+	var address = $('#address').val();
+	var pin = $('.marker-icon-active').attr('src');
+	if( address != '' ) {
 		placeMarker(address);
 	}
 	
-	jQuery('input[name="find"]').click(function(e){
+	$('#find-address').click(function(e){
 		e.preventDefault();
 		
-		var address = jQuery('#address').val();
-		if( address == "" ) {
-			jQuery('#address').css({'border': "1px solid red"});
+		var newaddress = $('#address').val();
+		var newpin = $('.marker-icon-active').attr('src');
+		if( newaddress == '' ) {
+			$('#address').css({'border': "1px solid red"});
 			return;
 		}
-		 $('#my_map').gmap3({
-		    clear: {
-		      name:["marker"],
-		      last: true
-		    }
+		if ( newaddress != address || newpin != pin ) {
+			$('.place-modified').fadeIn();
+		} else {
+			$('.place-modified').fadeOut();
+		}
+		$('#up2-map').gmap3({
+			clear: {
+				name:["marker"],
+				last: true
+			}
 		});
 		 
-		placeMarker(address);
+		placeMarker(newaddress);
 
 		return false;
 	});
 	
-	jQuery('.marker-icons').click(function(){
-		jQuery('.marker-icons').removeClass('marker-icon-active');
-		jQuery(this).addClass('marker-icon-active');
-		jQuery('#up2-custom-icon').val(jQuery(this).attr('src'));
+	$('.marker-icons').click(function(){
+		var $this = $(this);
+		$('.marker-icons').removeClass('marker-icon-active');
+		$this.addClass('marker-icon-active');
+		$('#up2-custom-icon').val($this.attr('src'));
+
+		var marker = $("#up2-map").gmap3({get:"marker"});
+		if( marker != undefined ) {
+			marker.setIcon($this.attr('src'));
+		}
+
+		var newaddress = $('#address').val();
+		var newpin = $('.marker-icon-active').attr('src');
+		if ( newaddress != address || newpin != pin ) {
+			$('.place-modified').fadeIn();
+		} else {
+			$('.place-modified').fadeOut();
+		}
 	});
 	
 });
@@ -38,7 +59,7 @@ function placeMarker(address) {
 	
 	var icons = jQuery('#map-icon-view').attr('src');
 	
-	jQuery("#my_map").width("600px").height("350px").gmap3({
+	jQuery("#up2-map").width("600px").height("350px").gmap3({
 		
 		getlatlng:{
 		    address: address,
@@ -60,7 +81,7 @@ function placeMarker(address) {
 		                  getaddress:{
 		                    latLng:marker.getPosition(),
 		                    callback:function(results){
-		                    	var content = results && results[0] ? results && results[0].formatted_address : "no address";
+		                    	var content = results && results[0] ? results && results[0].formatted_address : 'no address';
 		                    	jQuery('#address').val(content);
 		                        setLatLng(results[0].geometry.location);
 		                    }
@@ -70,14 +91,22 @@ function placeMarker(address) {
 		            }
 		        },
 				map:{ options: { zoom: 15 } }
-		      });
-		    }
-		  }
-		
+				}); 
+			}
+		}
 	});
-	  
-}
 
+	// center new marker point
+	setTimeout(function(){
+		var marker = jQuery('#up2-map').gmap3({get:'marker'});
+		var map = jQuery('#up2-map').gmap3('get');
+
+		if( map != undefined && marker != undefined ) {
+			map.panTo(marker.getPosition());
+			marker.setIcon(jQuery('.marker-icon-active').attr('src'));
+		}
+	}, 100);
+}
 
 function setLatLng(location) {
 	 jQuery('#lat').val(location.lat());
