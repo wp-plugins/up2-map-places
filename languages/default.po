@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Up2 Map Places\n"
-"POT-Creation-Date: 2013-04-03 18:49+0200\n"
-"PO-Revision-Date: 2013-04-03 18:49+0200\n"
+"POT-Creation-Date: 2013-04-03 19:05+0200\n"
+"PO-Revision-Date: 2013-04-03 19:05+0200\n"
 "Last-Translator: Up2 <test@up2test.com>\n"
 "Language-Team: Up2 <test@up2test.com>\n"
 "Language: English\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Map Places Shortcode Generator"
 msgstr ""
 
-#: ../index.php:73 ../include/widget.php:104
+#: ../index.php:73 ../include/widget.php:105
 msgid "Map Type Control"
 msgstr ""
 
@@ -43,47 +43,47 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: ../index.php:79 ../include/widget.php:108
+#: ../index.php:79 ../include/widget.php:109
 msgid "Navigation Control"
 msgstr ""
 
-#: ../index.php:85 ../include/widget.php:112
+#: ../index.php:85 ../include/widget.php:113
 msgid "Scrollwheel"
 msgstr ""
 
-#: ../index.php:91 ../include/widget.php:116
+#: ../index.php:91 ../include/widget.php:117
 msgid "StreetView Control"
 msgstr ""
 
-#: ../index.php:97 ../include/widget.php:120
+#: ../index.php:97 ../include/widget.php:121
 msgid "Clustering"
 msgstr ""
 
-#: ../index.php:103 ../include/widget.php:133
+#: ../index.php:103 ../include/widget.php:134
 msgid "Map Type"
 msgstr ""
 
-#: ../index.php:106 ../include/widget.php:135
+#: ../index.php:106 ../include/widget.php:136
 msgid "Terrain"
 msgstr ""
 
-#: ../index.php:107 ../include/widget.php:136
+#: ../index.php:107 ../include/widget.php:137
 msgid "Satellite"
 msgstr ""
 
-#: ../index.php:108 ../include/widget.php:137
+#: ../index.php:108 ../include/widget.php:138
 msgid "Roadmap"
 msgstr ""
 
-#: ../index.php:109 ../include/widget.php:138
+#: ../index.php:109 ../include/widget.php:139
 msgid "Hybrid"
 msgstr ""
 
-#: ../index.php:114 ../include/widget.php:142
+#: ../index.php:114 ../include/widget.php:143
 msgid "Map Type Control Options"
 msgstr ""
 
-#: ../index.php:117 ../include/widget.php:144
+#: ../index.php:117 ../include/widget.php:145
 msgid "Default"
 msgstr ""
 
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Dropdown Menu"
 msgstr ""
 
-#: ../index.php:123 ../include/widget.php:149
+#: ../index.php:123 ../include/widget.php:150
 msgid "Map Type Control Position"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgstr ""
 msgid "Map Categories"
 msgstr ""
 
-#: ../index.php:153 ../include/widget.php:168
+#: ../index.php:153 ../include/widget.php:169
 msgid "Select Map Category..."
 msgstr ""
 
@@ -203,20 +203,20 @@ msgstr ""
 msgid "Map Direction Shortcode Generator"
 msgstr ""
 
-#: ../index.php:237 ../include/widget.php:259
+#: ../index.php:237 ../include/widget.php:260
 msgid "Travel Mode"
 msgstr ""
 
-#: ../index.php:240 ../include/widget.php:261
+#: ../index.php:240 ../include/widget.php:262
 msgid "Driving"
 msgstr ""
 
-#: ../index.php:241 ../include/widget.php:262
+#: ../index.php:241 ../include/widget.php:263
 msgid "Walking"
 msgstr ""
 
-#: ../index.php:253 ../include/posttype.php:8 ../include/widget.php:175
-#: ../include/widget.php:266
+#: ../index.php:253 ../include/posttype.php:8 ../include/widget.php:176
+#: ../include/widget.php:267
 msgid "Map Place"
 msgstr ""
 
@@ -322,7 +322,7 @@ msgstr ""
 msgid "Parent Map Place:"
 msgstr ""
 
-#: ../include/posttype.php:41 ../include/widget.php:166
+#: ../include/posttype.php:41 ../include/widget.php:167
 msgid "Map Category"
 msgstr ""
 
@@ -456,78 +456,78 @@ msgstr ""
 msgid "Up2 Map Places"
 msgstr ""
 
-#: ../include/widget.php:99 ../include/widget.php:247
+#: ../include/widget.php:100 ../include/widget.php:248
 msgid "Title"
 msgstr ""
 
-#: ../include/widget.php:124 ../include/widget.php:251
+#: ../include/widget.php:125 ../include/widget.php:252
 msgid "Width"
 msgstr ""
 
-#: ../include/widget.php:128 ../include/widget.php:255
+#: ../include/widget.php:129 ../include/widget.php:256
 msgid "Height"
 msgstr ""
 
-#: ../include/widget.php:145
+#: ../include/widget.php:146
 msgid "Dropdown menu"
 msgstr ""
 
-#: ../include/widget.php:151
+#: ../include/widget.php:152
 msgid "Center of the bottom row"
 msgstr ""
 
-#: ../include/widget.php:152
+#: ../include/widget.php:153
 msgid "Bottom left and flow towards the middle"
 msgstr ""
 
-#: ../include/widget.php:153
+#: ../include/widget.php:154
 msgid "Bottom right and flow towards the middle"
 msgstr ""
 
-#: ../include/widget.php:154
+#: ../include/widget.php:155
 msgid "Left, above bottom-left elements, and flow upwards"
 msgstr ""
 
-#: ../include/widget.php:155
+#: ../include/widget.php:156
 msgid "Center of the left side"
 msgstr ""
 
-#: ../include/widget.php:156
+#: ../include/widget.php:157
 msgid "Left, below top-left elements, and flow downwards"
 msgstr ""
 
-#: ../include/widget.php:157
+#: ../include/widget.php:158
 msgid "Right, above bottom-right elements, and flow upwards"
 msgstr ""
 
-#: ../include/widget.php:158
+#: ../include/widget.php:159
 msgid "Center of the right side"
 msgstr ""
 
-#: ../include/widget.php:159
+#: ../include/widget.php:160
 msgid "Right, below top-right elements, and flow downwards"
 msgstr ""
 
-#: ../include/widget.php:160
+#: ../include/widget.php:161
 msgid "Center of the top row"
 msgstr ""
 
-#: ../include/widget.php:161
+#: ../include/widget.php:162
 msgid "Top left and flow towards the middle"
 msgstr ""
 
-#: ../include/widget.php:162
+#: ../include/widget.php:163
 msgid "Top right and flow towards the middle"
 msgstr ""
 
-#: ../include/widget.php:177 ../include/widget.php:268
+#: ../include/widget.php:178 ../include/widget.php:269
 msgid "Select Map Place..."
 msgstr ""
 
-#: ../include/widget.php:197
+#: ../include/widget.php:198
 msgid "Display Up2 Map Direction"
 msgstr ""
 
-#: ../include/widget.php:198
+#: ../include/widget.php:199
 msgid "Up2 Map Direction"
 msgstr ""
