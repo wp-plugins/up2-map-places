@@ -3,7 +3,7 @@ Contributors: Up2
 Author URI: http://www.up2technology.com/
 Requires at Least: 3.5
 Tested Up To: 3.5.1
-Stable tag: 1.2
+Stable tag: 1.3
 Tags: gmap3, maps, Google, Up2, places
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -46,6 +46,12 @@ To install Up2 Map Places follow these simple steps:
 5. Map Places CSV Import
 
 == Changelog ==
+
+= 1.3 =
+
+* Fixed: Upgrade logic
+* Fixed: Various minor bugs and CSS/JS errors
+* Added: Uninstall script
 
 = 1.2 =
 

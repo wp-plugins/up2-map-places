@@ -24,6 +24,7 @@ function up_map_places_shortcode( $atts ) {
 	), $atts ) );
 
 	$args['post_type'] = 'map_place';
+	$args['post_status'] = 'publish';
 	$args['nopaging'] = true;
 		
 	if ( $categories ) {
@@ -47,6 +48,10 @@ function up_map_places_shortcode( $atts ) {
 
 	while ( $custom_query->have_posts() ) : $custom_query->the_post();
 		$place_meta = get_post_meta( get_the_ID(), '_up2_map_place_data', true );
+
+		if ( ! $place_meta )
+			$place_meta = array();
+
 		$markerUrl = 'http://maps.google.com/mapfiles/';
 		$markerDefault = $markerUrl . 'marker.png';
 		$icon = ( isset( $place_meta['map-icon'] ) && $place_meta['map-icon'] != '' ) ? $place_meta['map-icon'] : $markerDefault;

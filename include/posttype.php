@@ -132,7 +132,7 @@ add_action( 'save_post', 'up2_map_place_data_save' );
 
 /** Admin Scripts and Styles */
 
-function up2_js_css( $hook ) {
+function up2_js_css() {
 	global $typenow;
 
 	if ( $typenow == 'map_place' || $typenow == '' ) :
@@ -142,7 +142,6 @@ function up2_js_css( $hook ) {
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
 <script type="text/javascript" src="<?php echo UP2_PLUGIN_URL; ?>js/gmap3.min.js"></script>
 <script type="text/javascript" src="<?php echo UP2_PLUGIN_URL; ?>js/up2-admin.js"></script>
-<script type="text/javascript" src="<?php echo UP2_PLUGIN_URL; ?>js/up2-uploader.js"></script>
 <script type="text/javascript">
 	var view_demo_ajax_nonce = '<?php echo wp_create_nonce( 'show_map' ); ?>';
 
@@ -165,6 +164,7 @@ function up2_js_css( $hook ) {
 endif;
 }
 add_action( 'admin_head-post.php', 'up2_js_css' );
+add_action( 'admin_head-post-new.php', 'up2_js_css' );
 add_action( 'admin_head-toplevel_page_up2-map-places-settings', 'up2_js_css' );
 add_action( 'admin_head-map-places-settings_page_up2-place-form', 'up2_js_css' );
 add_action( 'admin_head-map-places-settings_page_up2-map-direction', 'up2_js_css' );

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Up2 Map Places
 Description: Up2 Map Places allows you to display Google Maps in your content easily.
-Version: 1.2
+Version: 1.3
 Author: Up2Technology
 Author URI: http://www.up2technology.com/
 License: GPLv3
@@ -11,7 +11,7 @@ License: GPLv3
 /** Constants */
 
 if ( ! defined( 'UP2_PLUGIN_VERSION' ) )
-	define( 'UP2_PLUGIN_VERSION', '1.2' );
+	define( 'UP2_PLUGIN_VERSION', '1.3' );
 
 if ( ! defined( 'UP2_PLUGIN_DIR' ) )
 	define( 'UP2_PLUGIN_DIR', trailingslashit( dirname( __FILE__ ) ) );
@@ -58,6 +58,20 @@ add_action( 'plugins_loaded', 'up2_plugin_init' );
 require_once UP2_INCLUDE_DIR . 'posttype.php';
 require_once UP2_INCLUDE_DIR . 'shortcode.php';
 require_once UP2_INCLUDE_DIR . 'widget.php';
+
+/** Scripts and Styles */
+
+function up2_admin_scripts( $hook ) {
+	global $typenow;
+
+	if ( ( $hook == 'post.php' || $hook == 'post-new.php' ) && $typenow == 'map_place' ) {
+		if ( function_exists( 'wp_enqueue_media' ) )
+			wp_enqueue_media();
+
+		wp_enqueue_script( 'up2-uploader', UP2_PLUGIN_URL . 'js/up2-uploader.js', array( 'jquery' ), '1.0', true );		
+	}
+}
+add_action( 'admin_enqueue_scripts', 'up2_admin_scripts' );
 
 /** Settings Options */
 
@@ -269,7 +283,7 @@ function up2_map_direction() {
 		<tr>
 		 	<th scope="row"><?php _e( 'Map Direction View', 'up2' ); ?></th>
 			<td>
-			   <div id="up2-view-demo-map-direction"></div>
+			   <div id="up2-view-demo-map"></div>
 			</td>
 		</tr>
 	</table>

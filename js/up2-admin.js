@@ -60,7 +60,6 @@ function placeMarker(address) {
 	var icons = jQuery('#map-icon-view').attr('src');
 	
 	jQuery("#up2-map").width("600px").height("350px").gmap3({
-		
 		getlatlng:{
 		    address: address,
 		    callback: function(results){
@@ -97,15 +96,19 @@ function placeMarker(address) {
 	});
 
 	// center new marker point
-	setTimeout(function(){
-		var marker = jQuery('#up2-map').gmap3({get:'marker'});
-		var map = jQuery('#up2-map').gmap3('get');
-
-		if( map != undefined && marker != undefined ) {
-			map.panTo(marker.getPosition());
-			marker.setIcon(jQuery('.marker-icon-active').attr('src'));
+	if ( typenow == 'map_place' ) {
+		var mapcnt = jQuery('#up2-map');
+		if ( mapcnt.length ) {
+			setTimeout(function(){
+			var marker = mapcnt.gmap3({get:'marker'}),
+				map = mapcnt.gmap3('get');
+				if( map != undefined && marker != undefined ) {
+					map.panTo(marker.getPosition());
+					marker.setIcon(jQuery('.marker-icon-active').attr('src'));
+				}
+			}, 100);
 		}
-	}, 100);
+	}
 }
 
 function setLatLng(location) {
@@ -164,7 +167,7 @@ var up2MapDirection = {
 
 		jQuery.post(ajaxurl , data, function(response) {
 			jQuery(".up2-map-places").gmap3('destroy').remove();
-			jQuery('#up2-view-demo-map-direction').html(response);
+			jQuery('#up2-view-demo-map').html(response);
 		});
 	}
 };
@@ -187,11 +190,11 @@ var up2MapForm = {
 		
 	},
 	setCaptcha: function() {
-		this.captcha = ( jQuery('input[name="up2_captcha"]').attr('checked') == undefined ) ? false : true;
+		this.captcha = jQuery('input[name="up2_captcha"]').prop('checked');
 		this.shortcode();
 	},
 	setRegisterUsers: function() {
-		this.registerusers = ( jQuery('input[name="up2_registerusers"]').attr('checked') == undefined ) ? false : true;
+		this.registerusers = jQuery('input[name="up2_registerusers"]').prop('checked');
 		this.shortcode();
 	}
 };
@@ -240,23 +243,23 @@ var up2Map = {
 	},
 	
 	typeControl: function() {
-		this.mapTypeControl = ( jQuery('input[name="MapTypeControl"]').attr('checked') == undefined ) ? false : true;
+		this.mapTypeControl = jQuery('input[name="MapTypeControl"]').prop('checked');
 		this.shortcode();
 	},
 	navControl: function() {
-		this.navigationControl = ( jQuery('input[name="NavigationControl"]').attr('checked') == undefined ) ? false : true;
+		this.navigationControl = jQuery('input[name="NavigationControl"]').prop('checked');
 		this.shortcode();
 	},
 	scrollWheelControl: function() {
-		this.scrollwheel = ( jQuery('input[name="scrollwheel"]').attr('checked') == undefined ) ? false : true;
+		this.scrollwheel = jQuery('input[name="scrollwheel"]').prop('checked');
 		this.shortcode();
 	},
 	streetView: function() {
-		this.streetViewControl = ( jQuery('input[name="StreetViewControl"]').attr('checked') == undefined ) ? false : true;
+		this.streetViewControl = jQuery('input[name="StreetViewControl"]').prop('checked');
 		this.shortcode();
 	},
 	clustering: function() {
-		this.cluster = ( jQuery('input[name="cluster"]').attr('checked') == undefined ) ? false : true;
+		this.cluster = jQuery('input[name="cluster"]').prop('checked');
 		this.shortcode();
 	},
 	mapType: function() {

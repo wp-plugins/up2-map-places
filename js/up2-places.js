@@ -142,12 +142,11 @@ var up2CreatePlace = {
 		setTimeout(function(){
 			var marker = jQuery("#up2_map_demo").gmap3({get:"marker"});
 			var map = jQuery("#up2_map_demo").gmap3("get");
-			
+
 			if( map != undefined && marker != undefined ) {
 				map.panTo(marker.getPosition());
 			}
 		}, 100);
-		
 	}
 		
 };
